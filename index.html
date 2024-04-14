@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <title>Hidden Meeting Minutes</title>
+    <meta charset="utf-8" />
+    <link  rel="icon" type="image/png" sizes="16x16" href="Favicon\SpeakNoEvilMonkeyFavicon\favicon-16x16.png" />
+  </head>
+
+
+  <body>
+    <header>
+        <!-- Title Section!! -->
+        <section>
+          <h1>Welcome secret member . . .</h1>
+          <h3>Today's date: April 10th, 2024</h3>
+          <hr>
+        </section>
+
+        <!-- Navigation Section-->
+        <div>
+          <nav>
+              <ul>
+                  <li><a href="#">Brainstorming</a></li>
+                  <li><a href="#">Misc. Comments and Concerns</a></li>
+                  <li><a href="#">Pictures and Recordings</a></li>
+              </ul>
+          </nav>
+        </div>
+
+        <section>
+            <label>Attendance List:</label>
+            <br>
+            <input type="checkbox"> Anon Member 1 <br>
+            <input type="checkbox"> Anon Member 2 <br>
+            <input type="checkbox"> Anon Member 3 <br>
+            <input type="checkbox"> Secret Member <br>
+
+            <p>For <b>future</b> reference, add your schedule to <a href="https://www.when2meet.com/">this</a> when2meet scheduler (so we can have everyone be in attendance).</p> <br>
+        </section>
+
+    </header>
+
+
+    <main>
+      <hr>
+      <h2>Brainstorming</h2>
+      <hr>
+
+      <!--Agenda-->
+      <section>
+        <h4>Topics to cover in order: </h4>
+        <ol>
+          <li>Starting touches on HTML of the website</li>
+          <li>Look over and decide on UI/UX along with website <i>visuals</i> (may skip)</li>
+          <li>What each member has completed or what we still need to do (since the last meeting)</li>
+          <li>New prospects or projects to tackle</li>
+          <li>Distribution of workload</li>
+          <li>Next scheduled meeting</li>
+          <li>Whatever we want to talk about :)</li>
+        </ol>
+      </section>
+
+
+      <!--Unfinished business-->
+      <section>
+        <h4>Unfinished (and finished) things from last meeting:</h4>
+        <p>From the last meeting, it seems like anon1 has finished creating the <span class="last_meet_keywords">team name</span>, anon2 is almost done 
+          editing the <span class="last_meet_keywords">introduction video</span>, and anon3 has finished <span class="last_meet_keywords">scheduling</span>.
+          Secret member needs help getting set-up. This section uses <code>span</code> on keywords for things we have yet to finish. </p>
+        <img class = "Project Review" src = "\Images-Videos-Audios\ProjectActivityStockPhoto.JPG" width = "600" height = "450" alt="Project Review Breakdown Graph">
+        <details>
+          <summary><b>Project Report Breakdown</b></summary>
+          This week, we have made significant progress on the project. Everyone completed most of their delegated tasks, however, 6 of the low priority tasks have not been completed. We have yet to start 
+          on 4 parts, and are currently working on 6 parts. It seems like 3 designs and ideas that we wanted last week are still on hold, so we should discuss that next. Finally, we concluded that we will be
+          discarding 2 of our ideas.
+        </details>
+      </section>
+
+
+      <!--New Business-->
+      <section>
+        <h4>New Stuff for <em>this meeting</em></h4>
+        <p>This meeting, we are learning how to apply <code>em</code> and <code>strong</code>. Specifically, how does <code>em</code> differ from <code>i</code>, and how does <code>strong</code> differ from <code>b</code>.
+          Basically, while <em>em</em> and <i>i</i> are visually similar (as we can see), the latter is just text formmatting. The former suggests <em>emphasis</em> to the word itself. The case between 
+          <strong>strong</strong> and <b>b</b> are the same; where <code>strong</code> is similar to <code>em</code> in their uses.</p>
+      </section>
+      <img class = "New_Business_Ideas" src = "\Images-Videos-Audios\WhiteboardDiagramBrainstormStockPhoto.JPG" width = "600" height = "450" alt="Brainstorm Ideas on Whiteboard">
+
+      <hr>
+      <h2>Miscellaneuous comments, questions, concerns.</h2>
+      <hr>
+      
+      <section>
+        <h4>Comments:</h4> <i>none</i>
+        <h4>Questions:</h4> <i>When should we meet up next?</i>
+        <h4>Concerns:</h4> <i>I think we should add some more visuals to the website.</i>
+      </section>
+      <hr>
+
+    </main>
+
+
+    <footer>
+      <h2>Feedbacks and Historian Data (i.e. Recordings)</h2>
+
+      <form action="" method="get" class="Preset_Feedback">
+        <fieldset>
+          <legend><b>Preset Feedback</b></legend>
+
+          <div class="Preset_Feedback">
+            <label for="pre_feedback">Date of Concern: (Earliest Date: 03/31/2024, Latest: 06/20/2024)</label>
+            <input id="pre_feedback" type="date" min="2024-03-31" max="2024-06-20" required>
+          </div>
+
+          <div class="Preset_Feedback">
+            <input type="radio" id="speaking">
+            <label for="speaking">Were you able to voice your opinions during the meeting? (If you had anything to say)</label>
+            <br>
+            <input type="radio" id="water">
+            <label for="water">Water is important, did you drink water today?</label>
+          </div>
+
+          <div>
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <form action="" method="get" class="Anonymous-Concerns">
+        <fieldset>
+          <legend><b>Concern Submission</b></legend>
+
+          <div class="Anonymous-Concerns">
+            <label for="anon_concerns">Date of Concern: (Earliest Date: 03/31/2024, Latest: 06/20/2024)</label>
+            <input type="date" min="2024-03-31" max="2024-06-20" required>
+          </div>
+
+          <div class="Anonymous-Concerns">
+            <label for="anon_concerns">Brief Summary: (32 char limit)</label>
+            <input type="text" maxlength="32" size="40" required>
+
+            <br>
+            <label for="detailed_concerns">Your Concerns:</label>
+            <textarea id="detailed_concerns" rows="5" cols="64"></textarea>
+          </div>
+
+          <div>
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <form action="" method="get" class="Next_meeting">
+        <fieldset>
+          <legend><b>Misc</b></legend>
+
+          <label for="meet_choice">Are you available for the next meeting?</label>
+          <select name="meet_choice" id="meet_choice">
+            <option value="Choose_Availability">Choose Availability</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+
+          <br>
+
+          <label for="food_option">What snacks to bring next time?</label>
+          <input list="food_opts" id="food_option" name="food_option">
+
+          <datalist id="food_opts">
+            <option value="Granola_Bar">Granola Bar</option>
+            <option value="Crackers">Crackers</option>
+            <option value="Gummy_Bears">Gummy Bears</option>
+          </datalist>
+
+          <div>
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </form>
+
+    </footer>
+
+  </body>
+
+
+</html>
+
+
+<!--
+- a title (e.g. "Pomodoro Timer First Brainstorm")
+- subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+- subtitle for the date
+- attendance list
+- agenda of what the meeting will cover
+- things that were unfinished business from last meeting
+- things that are new business that need to be talked about
+- any miscellaneous comments / questions / concerns that anyone would like to bring up
+- pictures of any diagrams / architecture / things that were presented
+-SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+audio recording the meeting
+video recording of the meeting
+-->
