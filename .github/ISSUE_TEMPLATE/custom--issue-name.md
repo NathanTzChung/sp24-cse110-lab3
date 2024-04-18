@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-<h3>Description of issue here</h3>
+### Description of issue here
