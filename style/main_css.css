@@ -1,3 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --agendaitem1-color: rgba(98, 86, 173, 0.8);
+}
+
+
+/* Universal selector to set background of page */
 * {
-    background-color: #efe8e8
+    /* background-color: #efe8e8; */
+    color: black;
+
+}
+
+h1, h2, h3 {
+    font-size: 4vw; /* Some relative unit usage */
+    font-size: 3vh; /* Some relative unit usage */
+    font-family: 'Pacifico', cursive;
+}
+
+
+/* Body Stuff */
+body {
+    margin: 0 1 0 0;
+}
+
+main {
+    text-align: center;
+}
+
+ol {
+    display: inline-block;
+}
+
+/* Text widths overall */
+p {
+    /* text-align: center; */
+    display: inline-block;
+    min-width: 100px;
+    max-width: 500px;
+}
+
+
+
+/* Changing color of keywards in Agenda list */
+.Agenda_item1_text {
+    color: var(--agendaitem1-color, violet);
+    /* color: rgb(98, 86, 173); */
+}
+
+.Agenda_item2_text {
+    color: #5899ad;
+}
+
+.Agenda_item3_text {
+    color: hsl(130, 34%, 62%);
+}
+
+.Agenda_item4_text {
+    color: purple;
+}
+
+.Agenda_item5_text {
+    color: color(display-p3 0.2 0.1 0.7 / .5);
+
+}
+
+.Agenda_item6_text {
+    color: color-mix(in srgb, green 70%, cyan 50% )
+}
+
+
+/* Header stuff + Navigation bar*/
+
+header {
+    background-color: gray; /* Fallback background color for header */
+    background: linear-gradient(to right top, #73ced6, #4abae4, #5ba1ea, #907fd8, #bb54a9);
+    max-width: 100%;
+    min-width: 10em;
+    position: sticky;
+    top: 0px; 
+}
+
+header div li{
+    display: inline;
+    border: 1mm solid whitesmoke;     /* Note to self: 1 unique use of absolute unit */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+header li:hover > a:hover{
+    color: black !important;
+    background-color: rgba(255, 255, 255);
+}
+
+#Pics_Recs_Button {
+    position: relative;
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    top: -100px;
+    right: -16.5em;
+    float: right;
+}
+
+#Pics_Recs_Button a {
+    padding-bottom: 0.28rem !important;
+    padding-top: 0.28rem !important;
+    padding-left: 0.28rem !important;
+    padding-right: 0.28rem !important;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#Brainstorming_Button {
+    position: relative;
+    margin: 0;
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    top: -100px;
+    right: 16.5em;
+    float: right;
+
+}
+
+#Brainstorming_Button a {
+    padding: 0.5em 0.5em 0.5em 0.5em !important;          /* Note to self: 1 unique use of relative unit */
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+#Misc_Comments_Button {
+    position: relative;
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    top: -100px;
+    float: right;
+}
+
+#Misc_Comments_Button a {
+    padding: 0.5em 0.5em 0.5em 0.5em !important;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+}
+
+/* Attendance checklist */
+
+.attendance_check {
+    margin-top: 1;
+    margin-bottom: 1;
+    margin-right: 1;
+    margin-left: 1;
+    padding-right: 0;
+    border-style: solid;
+    border-color:antiquewhite;
+    border-width: 1mm;
+    border-radius: 20%;
+    max-width: 10em;
+
+    /* Title inside the attendance checklist */
+    label {
+        font-size: 20px;
+        text-decoration: underline;
+    }
+}
+
+
+/* All links that are not in the nav*/
+a:active {
+    color: yellow;
+    font-weight: bold;
+}
+
+img {
+    margin: auto;
+    margin-left: 2mm;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2cm;
+}
+
+
+.easter_egg {
+    margin: auto;
+    display: block;
+    border: solid;
+    border-radius: 35%;
+}
+
+.easter_egg:active {
+    display:none;
+}
+
+/* Miscellaneous section using flexbox (uses 3 flex attributes) */
+.misc_flex {
+    display: flex;
+    background-color: rgb(169, 169, 129);
+    justify-content: center;
+    align-content:space-between;
+    flex-direction: column;
+}
+
+.misc_flex > div {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Grid items for forms */
+footer h2 {
+    text-align: center;
+}
+.forms_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: beige;
+    padding: 10px;
+}
+
+.form_griditem1 {
+    grid-column-end: span 3;
+}
+
+h4 ~ #NewBusiness_p {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+h4 ~ #UnfinishedBus_p {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+hr + h2 {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1050px){
+    header {
+        background: linear-gradient(to left bottom, #91b8bc, #1f7fa2, #4082c9, #aac45d, #beda7d);
+    }
+    
+
+    header div li {
+        display: none;
+    }
+
+    img {
+        max-width: 280px;
+        max-height: 210px;
+    }
+
+    :root {
+        font-size: 200%;
+    }
 }
