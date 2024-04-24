@@ -150,18 +150,22 @@ header li:hover > a:hover{
 }
 
 /* Attendance checklist */
+div.attendance_check {
+    background-color: rgb(200, 20, 200, 0.25);
+}
 
 .attendance_check {
-    margin-top: 1;
-    margin-bottom: 1;
-    margin-right: 1;
-    margin-left: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
     padding-right: 0;
     border-style: solid;
     border-color:antiquewhite;
     border-width: 1mm;
     border-radius: 20%;
     max-width: 10em;
+    display: inline-block;
 
     /* Title inside the attendance checklist */
     label {
@@ -172,9 +176,12 @@ header li:hover > a:hover{
 
 
 /* All links that are not in the nav*/
-a:active {
-    color: yellow;
-    font-weight: bold;
+a {
+    color: rgb(109, 178, 214);
+    &:active {
+        color: yellow;
+        font-weight: bold;
+    }
 }
 
 img {
@@ -190,7 +197,7 @@ img {
     margin: auto;
     display: block;
     border: solid;
-    border-radius: 35%;
+    border-radius: 20%;
 }
 
 .easter_egg:active {
@@ -240,6 +247,16 @@ hr + h2 {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* paragraph elements with id's should be underlined */
+p[id] {
+    text-decoration: underline;
+}
+
+/* Giving background to agenda items */
+section:has(ol){
+    background: linear-gradient(to bottom, #cadddf, #9fcfe1, #a2e5d0, #dba3df, #aa8497);
+}
+
 @media (max-width: 1050px){
     header {
         background: linear-gradient(to left bottom, #91b8bc, #1f7fa2, #4082c9, #aac45d, #beda7d);
@@ -258,4 +275,5 @@ hr + h2 {
     :root {
         font-size: 200%;
     }
+
 }
